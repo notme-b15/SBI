@@ -1,0 +1,442 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transactions | State Bank of India</title>
+
+    <link
+        rel="stylesheet"
+        href="css/history.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>State Bank of India</h2>
+
+        <span>Online Banking Demo</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="transfer.html">
+            Transfer Money
+        </a>
+
+        <a href="history.html" class="active">
+            Transactions
+        </a>
+
+        <a href="#">
+            Profile
+        </a>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div>
+
+            <h1>
+                Transaction History
+            </h1>
+
+            <p>
+                View and manage your account transactions.
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- BALANCE -->
+
+    <div class="balance-card">
+
+        <div>
+
+            <span>
+                Current Balance
+            </span>
+
+            <h2>
+                ₹1,25,000.00
+            </h2>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                Account
+            </span>
+
+            <h3>
+                ****7890
+            </h3>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FILTERS -->
+
+    <section class="filters">
+
+        <div class="filter-group">
+
+            <label for="search">
+                Search
+            </label>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search transactions..."
+            >
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <label for="type">
+                Transaction Type
+            </label>
+
+            <select id="type">
+
+                <option value="all">
+                    All Transactions
+                </option>
+
+                <option value="credit">
+                    Credit
+                </option>
+
+                <option value="debit">
+                    Debit
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <label for="date">
+                Date
+            </label>
+
+            <select id="date">
+
+                <option value="all">
+                    All Time
+                </option>
+
+                <option value="week">
+                    Last 7 Days
+                </option>
+
+                <option value="month">
+                    Last 30 Days
+                </option>
+
+                <option value="year">
+                    Last Year
+                </option>
+
+            </select>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- TRANSACTIONS -->
+
+    <section class="transaction-card">
+
+
+        <div class="table-header">
+
+            <h2>
+                All Transactions
+            </h2>
+
+            <button class="download-btn">
+                Download Statement
+            </button>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table id="transactionTable">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Transaction ID
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>
+                            15 Aug 2026
+                        </td>
+
+                        <td>
+                            TXN100001
+                        </td>
+
+                        <td>
+                            Transfer to Account
+                        </td>
+
+                        <td>
+                            <span class="type debit-type">
+                                Debit
+                            </span>
+                        </td>
+
+                        <td class="debit">
+                            - ₹2,000.00
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            14 Aug 2026
+                        </td>
+
+                        <td>
+                            TXN100002
+                        </td>
+
+                        <td>
+                            Account Deposit
+                        </td>
+
+                        <td>
+                            <span class="type credit-type">
+                                Credit
+                            </span>
+                        </td>
+
+                        <td class="credit">
+                            + ₹5,000.00
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            12 Aug 2026
+                        </td>
+
+                        <td>
+                            TXN100003
+                        </td>
+
+                        <td>
+                            Transfer to Account
+                        </td>
+
+                        <td>
+                            <span class="type debit-type">
+                                Debit
+                            </span>
+                        </td>
+
+                        <td class="debit">
+                            - ₹1,500.00
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            10 Aug 2026
+                        </td>
+
+                        <td>
+                            TXN100004
+                        </td>
+
+                        <td>
+                            Account Deposit
+                        </td>
+
+                        <td>
+                            <span class="type credit-type">
+                                Credit
+                            </span>
+                        </td>
+
+                        <td class="credit">
+                            + ₹10,000.00
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            08 Aug 2026
+                        </td>
+
+                        <td>
+                            TXN100005
+                        </td>
+
+                        <td>
+                            Transfer to Account
+                        </td>
+
+                        <td>
+                            <span class="type debit-type">
+                                Debit
+                            </span>
+                        </td>
+
+                        <td class="debit">
+                            - ₹750.00
+                        </td>
+
+                        <td>
+                            <span class="status completed">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/history.js"></script>
+
+</body>
+
+</html>
+```

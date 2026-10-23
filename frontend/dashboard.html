@@ -1,0 +1,389 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Dashboard | SecureBank</title>
+
+    <link
+        rel="stylesheet"
+        href="css/dashboard.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+        SecureBank
+    </div>
+
+
+    <nav>
+
+        <a href="dashboard.html" class="active">
+            Dashboard
+        </a>
+
+        <a href="transfer.html">
+            Transfer Money
+        </a>
+
+        <a href="history.html">
+            Transactions
+        </a>
+
+        <a href="#">
+            Profile
+        </a>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- MAIN CONTENT -->
+
+<main class="main-content">
+
+
+    <!-- TOP BAR -->
+
+    <header>
+
+        <div>
+
+            <h1>Dashboard</h1>
+
+            <p>
+                Welcome back, John!
+            </p>
+
+        </div>
+
+
+        <div class="user">
+
+            <div class="avatar">
+                J
+            </div>
+
+            <span>
+                John Doe
+            </span>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- BALANCE SECTION -->
+
+    <section class="balance-section">
+
+
+        <div class="balance-card">
+
+            <p>
+                Available Balance
+            </p>
+
+            <h2>
+                ₹ 1,25,000.00
+            </h2>
+
+            <span>
+                Account **** 4567
+            </span>
+
+        </div>
+
+
+        <div class="account-card">
+
+            <p>
+                Account Type
+            </p>
+
+            <h3>
+                Savings Account
+            </h3>
+
+            <p>
+                Account Number
+            </p>
+
+            <h3>
+                1234567890
+            </h3>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- QUICK ACTIONS -->
+
+    <section class="quick-actions">
+
+        <h2>
+            Quick Actions
+        </h2>
+
+
+        <div class="action-container">
+
+
+            <a href="#" class="action-card">
+
+                <div class="action-icon">
+                    +
+                </div>
+
+                <h3>
+                    Deposit
+                </h3>
+
+                <p>
+                    Add money to your account
+                </p>
+
+            </a>
+
+
+
+            <a href="#" class="action-card">
+
+                <div class="action-icon">
+                    −
+                </div>
+
+                <h3>
+                    Withdraw
+                </h3>
+
+                <p>
+                    Withdraw virtual funds
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="transfer.html"
+                class="action-card"
+            >
+
+                <div class="action-icon">
+                    →
+                </div>
+
+                <h3>
+                    Transfer
+                </h3>
+
+                <p>
+                    Send money to another account
+                </p>
+
+            </a>
+
+
+
+            <a
+                href="history.html"
+                class="action-card"
+            >
+
+                <div class="action-icon">
+                    ≡
+                </div>
+
+                <h3>
+                    Transactions
+                </h3>
+
+                <p>
+                    View your transaction history
+                </p>
+
+            </a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RECENT TRANSACTIONS -->
+
+    <section class="transactions">
+
+        <div class="section-header">
+
+            <h2>
+                Recent Transactions
+            </h2>
+
+            <a href="history.html">
+                View All
+            </a>
+
+        </div>
+
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            Date
+                        </th>
+
+                        <th>
+                            Description
+                        </th>
+
+                        <th>
+                            Type
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Status
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            15 Aug 2026
+                        </td>
+
+                        <td>
+                            Money Transfer
+                        </td>
+
+                        <td>
+                            Debit
+                        </td>
+
+                        <td class="debit">
+                            - ₹2,000
+                        </td>
+
+                        <td>
+                            <span class="status success">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            14 Aug 2026
+                        </td>
+
+                        <td>
+                            Account Deposit
+                        </td>
+
+                        <td>
+                            Credit
+                        </td>
+
+                        <td class="credit">
+                            + ₹5,000
+                        </td>
+
+                        <td>
+                            <span class="status success">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            12 Aug 2026
+                        </td>
+
+                        <td>
+                            Money Transfer
+                        </td>
+
+                        <td>
+                            Debit
+                        </td>
+
+                        <td class="debit">
+                            - ₹1,500
+                        </td>
+
+                        <td>
+                            <span class="status success">
+                                Completed
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+<script src="js/dashboard.js"></script>
+</body>
+
+</html>
+```

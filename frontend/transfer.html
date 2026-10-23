@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Transfer Money | State Bank of India</title>
+
+    <link
+        rel="stylesheet"
+        href="css/transfer.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <h2>State Bank of India</h2>
+
+        <span>Online Banking Demo</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="transfer.html" class="active">
+            Transfer Money
+        </a>
+
+        <a href="history.html">
+            Transactions
+        </a>
+
+        <a href="#">
+            Profile
+        </a>
+
+        <a href="index.html">
+            Logout
+        </a>
+
+    </nav>
+
+</aside>
+
+
+
+<!-- MAIN CONTENT -->
+
+<main class="main-content">
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div>
+
+            <h1>Transfer Money</h1>
+
+            <p>
+                Send virtual funds securely to another account.
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- TRANSFER SECTION -->
+
+    <section class="transfer-container">
+
+
+        <!-- FORM -->
+
+        <div class="transfer-card">
+
+            <h2>
+                Make a Transfer
+            </h2>
+
+            <p class="subtitle">
+                Enter the recipient's account details.
+            </p>
+
+
+            <form id="transferForm">
+
+
+                <!-- FROM ACCOUNT -->
+
+                <div class="form-group">
+
+                    <label for="fromAccount">
+                        From Account
+                    </label>
+
+                    <select id="fromAccount" required>
+
+                        <option value="">
+                            Select Account
+                        </option>
+
+                        <option value="1234567890">
+                            Savings Account - ****7890
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- RECEIVER -->
+
+                <div class="form-group">
+
+                    <label for="receiverAccount">
+                        Receiver Account Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="receiverAccount"
+                        placeholder="Enter receiver account number"
+                        maxlength="20"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- CONFIRM RECEIVER -->
+
+                <div class="form-group">
+
+                    <label for="confirmAccount">
+                        Confirm Account Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="confirmAccount"
+                        placeholder="Re-enter account number"
+                        maxlength="20"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- AMOUNT -->
+
+                <div class="form-group">
+
+                    <label for="amount">
+                        Amount
+                    </label>
+
+                    <div class="amount-input">
+
+                        <span>₹</span>
+
+                        <input
+                            type="number"
+                            id="amount"
+                            placeholder="0.00"
+                            min="1"
+                            step="0.01"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- DESCRIPTION -->
+
+                <div class="form-group">
+
+                    <label for="description">
+                        Description
+                    </label>
+
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="Optional description"
+                        maxlength="100"
+                    >
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button
+                    type="submit"
+                    class="transfer-btn"
+                >
+                    Transfer Money
+                </button>
+
+
+            </form>
+
+        </div>
+
+
+
+        <!-- ACCOUNT SUMMARY -->
+
+        <div class="summary-card">
+
+            <h2>
+                Account Summary
+            </h2>
+
+
+            <div class="summary-item">
+
+                <span>
+                    Account Type
+                </span>
+
+                <strong>
+                    Savings Account
+                </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <span>
+                    Account Number
+                </span>
+
+                <strong>
+                    ****7890
+                </strong>
+
+            </div>
+
+
+            <div class="summary-item">
+
+                <span>
+                    Available Balance
+                </span>
+
+                <strong class="balance">
+                    ₹1,25,000.00
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="security-info">
+
+                <h3>
+                    Security Notice
+                </h3>
+
+                <p>
+                    Always verify the recipient's account number
+                    before confirming a transfer.
+                </p>
+
+                <p>
+                    Never share your password, PIN or OTP with anyone.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</main>
+
+
+<script src="js/transfer.js"></script>
+
+</body>
+
+</html>
+```
